@@ -1,0 +1,172 @@
+body{
+        background-color:rgb(3, 160, 139);
+}
+
+body,h1,h3,h4,h5
+{font-family: "Raleway", Arial, sans-serif}
+
+h1 {
+        letter-spacing: 6px;
+        font-size: 300%;
+}
+
+
+.container {
+        width:75%;
+        position: absolute;
+        padding: 2%;
+        left:1%;
+        margin: auto;
+        height:98%; 
+        overflow: hidden;
+        border: 2px solid rgb(33, 119, 108);
+        padding: 2% 1% 0%;
+        background-color: rgb(240, 240, 240);
+        box-shadow: 0px 10px 10px #02252b;
+        border-radius: 12px;
+}
+
+.poster{
+        width:22%;
+        position: absolute;
+        right:1%;
+        bottom:2%; 
+        background-color: rgb(240, 240, 240);
+        border:2px solid black;
+        padding:1% ;
+        box-shadow: 0px 10px 10px #02252b;
+        border-radius: 12px;
+        overflow: hidden;
+}
+
+.posts-list {
+        margin-bottom: 2%;
+        height:88%; 
+        border-radius: 12px;
+        border:2px solid rgb(219, 219, 219);
+        padding: 0% 2% 2% 2%;
+        background-color: rgb(255, 255, 255);
+        overflow-y: scroll;
+}
+
+.post-box-left {
+        width:50%;
+        border-radius:12px;
+        padding:1%;
+        }
+
+.post-box-right {
+       
+        width:50%;
+        margin-left:50%;
+        border-radius:12px;
+        padding:1%;
+}
+
+.boxer{
+        border:2px solid rgb(109, 104, 104);
+}
+
+.color-0{
+        background-color:#eed0d0;
+}
+
+.color-1{
+        background-color:#dff0d8;
+}
+
+textarea {
+        font-size: 130%; 
+        padding: 1%;
+        width:100%;
+        height: 100%;
+        resize: none;
+}
+
+.subject{
+        height: 10%;
+}
+
+.question{
+        height: 430px;
+}
+
+.button1 {
+        background-color: black;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+        color: white;
+        border-radius: 12px;
+        }
+
+.button {
+        margin-top:2.5%;
+        padding: 2%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 100%;
+        cursor: pointer;
+        text-align: center;
+        border:1px solid rgb(109, 104, 104);
+        border-top:none;
+        color: rgb(126, 121, 121);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        }
+        
+@media (max-width: 1002px) {
+        .container {
+                position: fixed;
+                left:0%;
+                margin:auto;
+                width: 100%;
+                font-size: 100%;
+                height: 69%;
+        }
+
+        .posts-list {
+                margin-bottom: 0.5%;
+                height:90%; 
+        }
+        
+        body,h1,h3,h4,h5,h2
+        {font-size: 95%;}
+
+	h5
+        {font-size: 90%;}
+	
+        .poster{
+                position: fixed;
+                bottom: 1%;
+                margin: auto;
+                width:98%;
+                height: 30%;
+        }
+
+        textarea {
+                font-size: 120%; 
+                padding: 1%;
+                margin:0.5%;
+                width:98%;
+        }
+
+        .subject{
+                height: 35px;
+        }
+
+        .question{
+                height: 70px;
+        }
+        
+        .button1 {
+                padding: 5px 20px;
+                font-size: 90%;
+                }
+}

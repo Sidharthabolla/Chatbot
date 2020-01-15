@@ -1,0 +1,49 @@
+<div class="container">
+        <header class=" w3-center w3-opacity" style="padding:3px">
+        <h1>Questionnaire</h1>
+        </header>
+        <div class="posts-list" data-ng-init="getData()"> 
+        <div ng-repeat="post in all_posts track by $index">
+                <div ng-if=$odd><br><br>
+                        <div class='post-box-right bg-light text-secondary' style="padding: 0%">
+                                <h5 style="float:right;margin-right:4%">{{post.local_time}}</h5>
+                        </div>
+                        <br>
+                        <div class="post-box-right color-{{post.answered}} boxer" id="{{post.id}}">
+                                <center>
+                                <h2>{{post.subject}}</h2>
+                                <p>{{post.question}}</p>
+                                </center>
+                                <div ng-if="post.answered==0">
+                                        <button style="float:right" id="ack{{post.id}}"  ng-click="answered(post.id,1)" class="button color-1">Acknowledge</button>
+                                        <button style="display:none;float:left" id="unack{{post.id}}" ng-click="answered(post.id,0)" class="button color-0">Mark as unread</button>
+                                </div> 
+                                <div ng-if="post.answered==1">
+                                        <button style="display:none;float:right" id="ack{{post.id}}"  ng-click="answered(post.id,1)" class="button color-1">Acknowledge</button>
+                                        <button style="float:left" id="unack{{post.id}}" ng-click="answered(post.id,0)" class="button color-0">Mark as unread</button>
+                                </div>
+                        </div>
+                </div>
+                <div ng-if=$even><br><br>
+                        <div class='post-box-left bg-light text-secondary' style="padding: 0%">
+                                <h5 style="float:left;margin-left:4%;">{{post.local_time}}</h5>
+                        </div>
+                                <br>
+                        <div class="post-box-left color-{{post.answered}} boxer" id="{{post.id}}">
+                                <center>
+                                <h2>{{post.subject}}</h2>
+                                <p>{{post.question}}</p>
+                                </center>
+                                <div ng-if="post.answered==0">
+                                        <button style="float:right" id="ack{{post.id}}"  ng-click="answered(post.id,1)" class="button color-1">Acknowledge</button>
+                                        <button style="display:none;float:left" id="unack{{post.id}}" ng-click="answered(post.id,0)" class="button color-0">Mark as unread</button>
+                                </div> 
+                                <div ng-if="post.answered==1">
+                                        <button style="display:none;float:right" id="ack{{post.id}}"  ng-click="answered(post.id,1)" class="button color-1">Acknowledge</button>
+                                        <button style="float:left" id="unack{{post.id}}" ng-click="answered(post.id,0)" class="button color-0">Mark as unread</button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        </div>
+</div>
